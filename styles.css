@@ -1,0 +1,26 @@
+* {
+  --blue: #3fb9f1;
+  --darkgrey: #696969;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  display: flex;
+  background-color: var(--darkgrey);
+  height: 6rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 2rem;
+}
+
+ul {
+  display: flex;
+}
