@@ -32,7 +32,7 @@ h1 {
   background-color: var(--blue);
   color: var(--darkgrey);
   font-size: 3rem;
-  margin: 0 1rem;
+  margin: 0.75rem 1rem;
   padding: 0.25rem 0.75rem;
 }
 
@@ -97,6 +97,7 @@ section h2 {
   margin: 0 2rem;
 }
 
+/* Project Photos */
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -126,6 +127,7 @@ section h2 {
   object-position: 50% 50%;
 }
 
+/* Tags on Projects */
 .tag {
   display: none;
 }
@@ -136,6 +138,7 @@ p {
   color: var(--darkblue);
 }
 
+/* Contact Me Section */
 #contact-me ul {
   width: 100%;
   display: flex;
@@ -151,6 +154,7 @@ p {
   padding: 0.5rem;
 }
 
+/* Media Queries */
 @media (max-width: 900px) {
   #contact-me ul {
     flex-direction: column;
@@ -161,6 +165,43 @@ p {
   }
 }
 
-/* @media (max-with: 767px) {
+@media (max-width: 720px) {
+  header {
+    flex-direction: column;
+    padding-bottom: 2rem;
+    height: auto;
+  }
+
+  h1 {
+    align-self: flex-start;
+  }
+
+  nav {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+  }
+
+  section h2 {
+    border-right: none;
+    text-align: left;
+    flex: 1 1 3rem;
+    height: 1rem;
+  }
+
+  section h2::after {
+    content: ' ';
+    display: block;
+    height: 4px;
+    width: 95%;
+    background: var(--darkblue);
+  }
+}
+
+/* @media (max-width: 500px) {
 
 } */
