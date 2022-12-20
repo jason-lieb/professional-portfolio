@@ -1,8 +1,8 @@
 /* Global */
 :root {
-  --blue: #76cdf5;
+  --blue: #67b5da;
   --darkblue: #183b6d;
-  --darkgrey: #303030;
+  --darkgrey: #36394d;
 }
 
 html {
@@ -11,7 +11,6 @@ html {
 
 body {
   font-family: Roboto, sans-serif;
-  width: 100%;
 }
 
 a {
@@ -23,7 +22,6 @@ header {
   display: flex;
   background-color: var(--darkgrey);
   height: 5rem;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -101,6 +99,12 @@ section h2 {
   margin: 0 2rem;
 }
 
+#about-me p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
 /* Project Photos */
 .projects {
   display: flex;
@@ -116,23 +120,25 @@ section h2 {
 
 .project:nth-of-type(1) {
   width: 100%;
+  height: 400px;
 }
 
 a {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .project-img {
   width: 100%;
-  height: auto;
+  height: 350px;
   object-fit: cover;
   object-position: 50% 50%;
 }
 
 /* Tags on Projects */
 .tag {
+  display: none;
   position: relative;
   top: -10rem;
   width:fit-content;
@@ -148,12 +154,6 @@ h3 {
 p {
   color: var(--darkblue);
   margin-top: 0.5rem;
-}
-
-#about-me p {
-  line-height: 1.5;
-  margin-bottom: 1rem;
-  margin-top: 0;
 }
 
 /* Contact Me Section */
