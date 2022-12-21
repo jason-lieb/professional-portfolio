@@ -6,7 +6,7 @@ https://jason-lieb.github.io/professional-portfolio/
 
 
 ## Picture
-![Screenshot of portfolio](./assets/screenshot.jpg)
+![Screenshot of portfolio](./assets/screenshot.png)
 
 ## Installation
 
